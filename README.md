@@ -41,7 +41,7 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
    ```
 
 5. **Download model checkpoint from here**
-   - Link: https://github.com/facebookresearch/sam2
+   - Link: [SAM2](https://github.com/facebookresearch/sam2)
    - Place the downloaded checkpoint file in ```checkpoints/``` folder
 
 6. **Run the Video Processing Script**
@@ -57,5 +57,5 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
 
 ## References
 
-- SAM2: facebookresearch/sam2
-- MediaPipe: mediapipe.dev
+- [SAM2](https://github.com/facebookresearch/sam2)
+- [MediaPipe](https://github.com/google-ai-edge/mediapipe)
