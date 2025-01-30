@@ -156,7 +156,7 @@ def process_video(input_path, output_path, checkpoint, config):
 if __name__ == "__main__":
     input_video = "test.mp4"
     output_video = "output_masks.mp4"
-    checkpoint_path = "sam2.1_hiera_large.pt"
-    model_cfg_path = "configs/sam2.1/sam2.1_hiera_l.yaml"
+    checkpoint_path = "checkpoints/sam2.1_hiera_large.pt"
+    model_cfg_path = "configs/sam2.1/sam2.1_hiera_l.yaml" # Change according to the checkpoint chosen. Don't change the path here.
 
     process_video(input_video, output_video, checkpoint_path, model_cfg_path)
