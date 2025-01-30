@@ -48,6 +48,17 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
    python process_video.py
    ```
 
+## Common Issues & Fixes
+
+🔴 Issue: FileNotFoundError for test.mp4\
+✅ Fix: Ensure the file is in the same directory as the script or provide the absolute path.\
+
+🔴 Issue: checkpoints/sam2.1_hiera_large.pt Not Found\
+✅ Fix: Download and place the model file in the checkpoints/ directory.\
+
+🔴 Issue: CUDA Out of Memory Error\
+✅ Fix: Lower the batch size inside the script\
+
 ## Notes
 
 - Ensure your GPU drivers and CUDA are properly installed for faster processing.
