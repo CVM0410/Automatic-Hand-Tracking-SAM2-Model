@@ -40,22 +40,22 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
    cd ..
    ```
 
-5. **Download checkpoint from here**
-   Link: https://github.com/facebookresearch/sam2
-   Place the file in checkpoints folder.
+5. **Download model checkpoint from here**
+   - Link: https://github.com/facebookresearch/sam2
+   - Place the downloaded checkpoint file in ```checkpoints/``` folder
 
 6. **Run the Video Processing Script**
    ```bash
    python process_video.py
    ```
 
-##Notes
+## Notes
 
 - Ensure your GPU drivers and CUDA are properly installed for faster processing.
 - If you face device errors, modify process_video.py to use device="cpu" instead of cuda.
 - For large videos, consider reducing batch size in the script.
 
-##References
+## References
 
-SAM2: facebookresearch/sam2
-MediaPipe: mediapipe.dev
+- SAM2: facebookresearch/sam2
+- MediaPipe: mediapipe.dev
