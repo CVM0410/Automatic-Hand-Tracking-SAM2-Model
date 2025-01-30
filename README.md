@@ -7,7 +7,7 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
 ## Features
 
 - **Automatic Device Selection**: Chooses CUDA if available, then MPS on Apple Silicon, else CPU.
-- **MediaPipe Hand Detection**: Uses the first frame from the video `test.mp4` to locate hand landmarks (for debugging / bounding‐box generation).
+- **MediaPipe Hand Detection**: Uses the first frame from the video `test.mp4` to locate hand landmarks and save a debugging image `hand_landmarks_first_frame.jpg` to visualize detected hand positions.
 - **SAM 2 Prompt Creation**: Converts the detected hand regions into bounding‐box prompts for SAM 2.
 - **Mask Propagation**: SAM 2 propagates the hand masks through every frame of the video.
 - **Overlay**: The final segmentation mask is drawn in green over the video and written out as `output_masks.mp4`.
