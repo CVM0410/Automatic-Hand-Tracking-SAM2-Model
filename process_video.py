@@ -28,7 +28,7 @@ mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
 def detect_hands(image, max_hands=2, conf=0.5):
-    """ Detects hand landmarks using MediaPipe and returns the processed image and results. """
+    # Detects hand landmarks using MediaPipe and returns the processed image and results
     with mp_hands.Hands(static_image_mode=True, max_num_hands=max_hands, min_detection_confidence=conf) as hands:
         rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         results = hands.process(rgb_image)
@@ -44,10 +44,7 @@ def detect_hands(image, max_hands=2, conf=0.5):
 
 # 3. SAM 2 + MEDIAPIPE INTEGRATION
 def process_video(input_path, output_path, checkpoint, config):
-    """
-    Loads SAM2, detects hands in the first frame using MediaPipe,
-    generates bounding box prompts, applies segmentation, and overlays masks.
-    """
+    # Loads SAM2, detects hands in the first frame using MediaPipe, generates bounding box prompts, applies segmentation, and overlays masks.
 
     # Load SAM2 model
     predictor = build_sam2_video_predictor(config, checkpoint, device=device.type)
