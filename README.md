@@ -65,6 +65,10 @@ This project detects hands in a video using [MediaPipe Hands](https://google.git
 - If you face device errors, modify process_video.py to use device="cpu" instead of cuda.
 - For large videos, consider reducing batch size in the script.
 
+## Example: Hand Landmark Detection (Before Segmentation)  
+The image below shows the detected hand landmarks in the first frame, using MediaPipe:  
+![Hand Landmarks](https://i.ibb.co/spYkb17Z/download.jpg)
+
 ## References
 
 - [SAM2](https://github.com/facebookresearch/sam2)
